@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Medicare Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html">Medicare Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="blog.html">Health Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center bg-light p-4">
+        <h1>Our Medical Products</h1>
+        <p>Explore our wide range of medicines and healthcare essentials.</p>
+        <input type="text" id="searchBar" placeholder="Search for medicines..." class="form-control w-50 mx-auto" onkeyup="filterProducts()">
+    </section>
+
+    <!-- Products Grid -->
+    <section class="container my-5">
+        <div class="row" id="product-list">
+            <!-- Medicine Cards -->
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img src="medicine1.jpg" class="card-img-top" alt="Paracetamol">
+                    <div class="card-body">
+                        <h5 class="card-title">Paracetamol</h5>
+                        <p class="card-text">Relieves fever and pain.</p>
+                        <p><strong>Price:</strong> ₹50</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img src="medicine2.jpg" class="card-img-top" alt="Ibuprofen">
+                    <div class="card-body">
+                        <h5 class="card-title">Ibuprofen</h5>
+                        <p class="card-text">Reduces inflammation and pain.</p>
+                        <p><strong>Price:</strong> ₹80</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img src="medicine3.jpg" class="card-img-top" alt="Vitamin C">
+                    <div class="card-body">
+                        <h5 class="card-title">Vitamin C</h5>
+                        <p class="card-text">Boosts immunity and skin health.</p>
+                        <p><strong>Price:</strong> ₹150</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img src="medicine4.jpg" class="card-img-top" alt="Aspirin">
+                    <div class="card-body">
+                        <h5 class="card-title">Aspirin</h5>
+                        <p class="card-text">Used to treat pain and inflammation.</p>
+                        <p><strong>Price:</strong> ₹70</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img src="medicine5.jpg" class="card-img-top" alt="Cough Syrup">
+                    <div class="card-body">
+                        <h5 class="card-title">Cough Syrup</h5>
+                        <p class="card-text">Relieves cough and throat irritation.</p>
+                        <p><strong>Price:</strong> ₹120</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img src="medicine6.jpg" class="card-img-top" alt="Antibiotics">
+                    <div class="card-body">
+                        <h5 class="card-title">Antibiotics</h5>
+                        <p class="card-text">Treats bacterial infections effectively.</p>
+                        <p><strong>Price:</strong> ₹200</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img src="medicine7.jpg" class="card-img-top" alt="Insulin">
+                    <div class="card-body">
+                        <h5 class="card-title">Insulin</h5>
+                        <p class="card-text">Used for diabetes management.</p>
+                        <p><strong>Price:</strong> ₹500</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img src="medicine8.jpg" class="card-img-top" alt="Calcium Tablets">
+                    <div class="card-body">
+                        <h5 class="card-title">Calcium Tablets</h5>
+                        <p class="card-text">Strengthens bones and teeth.</p>
+                        <p><strong>Price:</strong> ₹180</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product">
+                <div class="card">
+                    <img src="medicine9.jpg" class="card-img-top" alt="Multivitamins">
+                    <div class="card-body">
+                        <h5 class="card-title">Multivitamins</h5>
+                        <p class="card-text">Supports overall health and wellness.</p>
+                        <p><strong>Price:</strong> ₹250</p>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-3 bg-dark text-white">
+        <p>&copy; 2025 Medicare Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
